@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            width: 100%;
+            width: 112%;
         }
         </style>
 </asp:Content>
@@ -12,7 +12,7 @@
             <table class="auto-style1">
                 <tr>
                     <td rowspan="2" colspan="3">
-                        <asp:Image ID="Image1" runat="server" ImageUrl='<%#"~/IMG/"+ Eval("hinh") %>' Width="150px" />
+                        <asp:Image ID="Image1" runat="server" ImageUrl='<%#"~/IMG/"+ Eval("hinh") %>' Width="200px" />
                     </td>
                     <td colspan="3">
                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("tenhang") %>'></asp:Label>
