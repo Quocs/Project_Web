@@ -75,6 +75,7 @@
     <Content Include="giohang.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HOME.aspx" />
+    <Content Include="Loaihang_Admin.aspx" />
     <Content Include="IMG\1.jpg" />
     <Content Include="IMG\2.jpg" />
     <Content Include="IMG\3.jpg" />
@@ -83,11 +84,20 @@
     <Content Include="IMG\jeans2.jpg" />
     <Content Include="IMG\jeans3.jpg" />
     <Content Include="IMG\jeans4.jpg" />
+    <Content Include="mathang_admin.aspx" />
     <Content Include="sanpham.aspx" />
     <Content Include="sanpham.css" />
+    <Content Include="Themloaihang.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="chitiet.aspx.cs">
       <DependentUpon>chitiet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -112,6 +122,21 @@
     <Compile Include="HOME.aspx.designer.cs">
       <DependentUpon>HOME.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ketnoi.cs" />
+    <Compile Include="Loaihang_Admin.aspx.cs">
+      <DependentUpon>Loaihang_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loaihang_Admin.aspx.designer.cs">
+      <DependentUpon>Loaihang_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mathang_admin.aspx.cs">
+      <DependentUpon>mathang_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mathang_admin.aspx.designer.cs">
+      <DependentUpon>mathang_admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sanpham.aspx.cs">
       <DependentUpon>sanpham.aspx</DependentUpon>
@@ -126,8 +151,16 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Themloaihang.aspx.cs">
+      <DependentUpon>Themloaihang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Themloaihang.aspx.designer.cs">
+      <DependentUpon>Themloaihang.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
