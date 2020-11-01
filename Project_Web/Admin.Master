@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Project_Web.Admin" %>
+
+<!DOCTYPE html>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class='navbar navbar-inverse'>
+      <div class='navbar-inner nav-collapse' style="height: auto;">
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page One</a></li>
+          <li><a href="#">Page Two</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id='content' class='row-fluid'>
+    <div class='span2 sidebar'>
+        <h3>Left Sidebar</h3>
+        <ul class="nav nav-tabs nav-stacked">
+          <li><a href="Loaihang_Admin.aspx">LOAI HANG</a></li>
+          <li><a href="mathang_admin.aspx">MAT HANG</a></li>
+          <li><a href='#'>KHACH HANG</a></li>
+        </ul>
+      </div>
+      <div class='span8 main'>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+        
+
+      </div>
+      <div class='span2 sidebar'>
+        <h3>Right Sidebar</h3>
+        <ul class="nav nav-tabs nav-stacked">
+          <li><a href='#'>Another Link 1</a></li>
+          <li><a href='#'>Another Link 2</a></li>
+          <li><a href='#'>Another Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+            
+        </div>
+    </form>
+</body>
+</html>
